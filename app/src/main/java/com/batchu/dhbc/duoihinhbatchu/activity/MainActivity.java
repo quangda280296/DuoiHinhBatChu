@@ -36,9 +36,9 @@ public class MainActivity extends AppCompatActivity {
 
         this.mainActivity = MainActivity.this;
 
-        FrameLayout layout_ads = findViewById(R.id.layout_ads);
+        /*FrameLayout layout_ads = findViewById(R.id.layout_ads);
         RelativeLayout adView = findViewById(R.id.adView);
-        Utils.showAd(getApplicationContext(), adView, layout_ads);
+        Utils.showAd(getApplicationContext(), adView, layout_ads);*/
 
         lbl_score = findViewById(R.id.lbl_score);
         setScore();
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 PlayMusic.playClick(getApplicationContext());
-                Utils.showRewardedVideo(MainActivity.this);
+                //Utils.showRewardedVideo(MainActivity.this);
             }
         }, 20, getApplicationContext()));
     }

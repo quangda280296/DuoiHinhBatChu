@@ -65,9 +65,9 @@ public class PlayActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
 
-        FrameLayout layout_ads = findViewById(R.id.layout_ads);
+        /*FrameLayout layout_ads = findViewById(R.id.layout_ads);
         RelativeLayout adView = findViewById(R.id.adView);
-        Utils.showAd(getApplicationContext(), adView, layout_ads);
+        Utils.showAd(getApplicationContext(), adView, layout_ads);*/
 
         handleClickShare();
         handleClickPass();

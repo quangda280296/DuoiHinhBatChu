@@ -1,17 +1,11 @@
 package com.batchu.dhbc.duoihinhbatchu;
 
 import android.app.Application;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
-import android.util.Log;
 
-import com.crashlytics.android.Crashlytics;
-import com.facebook.FacebookSdk;
 import com.batchu.dhbc.duoihinhbatchu.config.Config;
-import com.batchu.dhbc.duoihinhbatchu.service.ShowAdService;
-
-import java.util.Calendar;
+import com.crashlytics.android.Crashlytics;
 
 import io.fabric.sdk.android.Fabric;
 
@@ -29,13 +23,13 @@ public class MainApplication extends Application {
         super.onCreate();
         Fabric.with(this, new Crashlytics());
 
-        FacebookSdk.sdkInitialize(getApplicationContext());
+        //FacebookSdk.sdkInitialize(getApplicationContext());
 
         // Handle font
         fontBold = Typeface.createFromAsset(getAssets(), "Hanzel.ttf");
         fontMedium = Typeface.createFromAsset(getAssets(), "Amerika Sans.ttf");
 
-        // Handle adService
+        /*// Handle adService
         Calendar calendar = Calendar.getInstance();
         Config.time_start = ((calendar.get(Calendar.YEAR) * 365 + calendar.get(Calendar.DAY_OF_YEAR)) * 24
                 + calendar.get(Calendar.HOUR_OF_DAY)) * 3600 + calendar.get(Calendar.MINUTE) * 60 + calendar.get(Calendar.SECOND);
@@ -46,7 +40,7 @@ public class MainApplication extends Application {
         Config.showAdService = new Intent(this, ShowAdService.class);
         startService(Config.showAdService);
 
-        Log.d("ttttuuuu", "testtttttttt");
+        Log.d("ttttuuuu", "testtttttttt");*/
 
         /*Config.mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.theme);
         Config.mediaPlayer.setLooping(true);*/
