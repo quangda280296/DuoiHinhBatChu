@@ -3,7 +3,8 @@
 ## Description
 Game giả lập gameshow truyền hình "Đuổi hình bắt chữ": Người chơi nhìn hình và chọn các chữ cái để tạo thành đáp án đúng.
 
-## Link Google Play: 
+## Link app: 
+https://drive.google.com/open?id=1qy6E6NsDRLDTlzI-nvafis6EPOQpZo_m
 
 ## Screenshots
 ![]
